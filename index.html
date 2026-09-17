@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <!-- FontAwesome para Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {
@@ -43,7 +43,7 @@
         .font-display {
             font-family: 'Playfair Display', serif;
         }
-        /* Custom scrollbar */
+        /* Barra de rolagem personalizada */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -61,10 +61,10 @@
 </head>
 <body class="bg-brand-cream text-brand-dark antialiased selection:bg-brand-yellow selection:text-brand-dark">
 
-    <!-- HEADER & NAVIGATION -->
+    <!-- CABEÇALHO & NAVEGAÇÃO -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-orange-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Logo -->
+            <!-- Logotipo -->
             <a href="#" class="flex items-center gap-2 group">
                 <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-yellow via-brand-red to-brand-green flex items-center justify-center text-white shadow-md transform group-hover:scale-105 transition">
                     <i class="fa-solid fa-cookie-bite text-lg"></i>
@@ -75,7 +75,7 @@
                 </div>
             </a>
 
-            <!-- Desktop Menu -->
+            <!-- Menu para Computador -->
             <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-gray-700">
                 <a href="#inicio" class="hover:text-brand-red transition">Início</a>
                 <a href="#produtos" class="hover:text-brand-red transition">Produtos</a>
@@ -85,27 +85,27 @@
                 <a href="#contato" class="hover:text-brand-red transition">Contato</a>
             </nav>
 
-            <!-- Actions (Cart & CTA) -->
+            <!-- Ações (Carrinho & CTA) -->
             <div class="flex items-center gap-3">
-                <!-- Cart Button -->
+                <!-- Botão do Carrinho -->
                 <button onclick="toggleCart()" class="relative p-2.5 rounded-full bg-brand-peach hover:bg-orange-200 text-brand-dark transition flex items-center justify-center shadow-sm" aria-label="Carrinho de Compras">
                     <i class="fa-solid fa-cart-shopping text-lg"></i>
                     <span id="cart-counter" class="absolute -top-1 -right-1 bg-brand-red text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center shadow-md scale-0 transition-transform duration-300">0</span>
                 </button>
 
-                <!-- Order Button -->
+                <!-- Botão de Fazer Pedido -->
                 <a href="#produtos" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-brand-red to-rose-600 hover:from-rose-600 hover:to-brand-red text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
                     <i class="fa-solid fa-bag-shopping"></i> Fazer Pedido
                 </a>
 
-                <!-- Mobile Menu Button -->
+                <!-- Botão de Menu para Celular -->
                 <button onclick="toggleMobileMenu()" class="md:hidden p-2.5 rounded-lg text-gray-700 hover:bg-gray-100 transition" aria-label="Menu">
                     <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
                 </button>
             </div>
         </div>
 
-        <!-- Mobile Nav Dropdown -->
+        <!-- Menu Desdobrável para Celular -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
             <a href="#inicio" onclick="toggleMobileMenu()" class="block py-2 text-gray-700 hover:text-brand-red font-medium border-b border-gray-50">Início</a>
             <a href="#produtos" onclick="toggleMobileMenu()" class="block py-2 text-gray-700 hover:text-brand-red font-medium border-b border-gray-50">Produtos</a>
@@ -116,15 +116,15 @@
         </div>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- SEÇÃO DE APRESENTAÇÃO (HERO) -->
     <section id="inicio" class="relative overflow-hidden bg-gradient-to-b from-orange-50/60 to-brand-cream py-16 md:py-24">
-        <!-- Decorative background elements -->
+        <!-- Elementos decorativos de fundo -->
         <div class="absolute top-10 left-10 w-72 h-72 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-10 right-10 w-80 h-80 bg-brand-red/10 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Hero Text -->
+                <!-- Texto da Seção Principal -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 text-amber-900 text-xs sm:text-sm font-semibold tracking-wide border border-amber-200">
                         <span>🇧🇷 Tradição Brasileira</span>
@@ -149,7 +149,7 @@
                         </a>
                     </div>
 
-                    <!-- Highlights badge bar -->
+                    <!-- Barra de estatísticas -->
                     <div class="pt-6 grid grid-cols-3 gap-4 border-t border-gray-200/60 max-w-lg mx-auto lg:mx-0 text-center lg:text-left">
                         <div>
                             <span class="block font-bold text-xl text-brand-dark">100%</span>
@@ -166,10 +166,10 @@
                     </div>
                 </div>
 
-                <!-- Hero Image Grid / Showcase -->
+                <!-- Grade de Imagens e Destaques -->
                 <div class="lg:col-span-5 relative">
                     <div class="relative mx-auto max-w-md lg:max-w-none">
-                        <!-- Main Image -->
+                        <!-- Imagem Principal -->
                         <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white aspect-[4/3] relative">
                             <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=800&q=80" 
                                  alt="Doces artesanais variados" 
@@ -177,7 +177,7 @@
                                  onerror="this.src='https://placehold.co/600x450/fedf00/2d1b0d?text=Doce+Fronteira'">
                         </div>
                         
-                        <!-- Floating Badge Card 1 -->
+                        <!-- Cartão Flutuante 1 -->
                         <div class="absolute -bottom-6 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-orange-100 flex items-center gap-3 animate-bounce duration-1000">
                             <div class="w-10 h-10 rounded-full bg-emerald-100 text-brand-green flex items-center justify-center font-bold text-lg">
                                 🇧🇷
@@ -188,7 +188,7 @@
                             </div>
                         </div>
 
-                        <!-- Floating Badge Card 2 -->
+                        <!-- Cartão Flutuante 2 -->
                         <div class="absolute -top-6 -right-4 sm:-right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-orange-100 flex items-center gap-3">
                             <div class="w-10 h-10 rounded-full bg-red-100 text-brand-red flex items-center justify-center font-bold text-lg">
                                 🇻🇪
@@ -204,16 +204,16 @@
         </div>
     </section>
 
-    <!-- PRODUCTS & CATEGORIES SECTION -->
+    <!-- SEÇÃO DE PRODUTOS E VITRINE -->
     <section id="produtos" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
+            <!-- Cabeçalho da Seção -->
             <div class="text-center max-w-3xl mx-auto mb-16">
                 <span class="text-brand-red font-semibold text-sm uppercase tracking-widest block mb-2">Nossa Vitrine</span>
                 <h2 class="font-display font-bold text-3xl sm:text-4xl text-brand-dark mb-4">Escolha suas delícias favoritas</h2>
                 <p class="text-gray-600 text-base sm:text-lg">Explore receitas tradicionais preparadas com ingredientes selecionados e muito carinho.</p>
                 
-                <!-- Category Tabs Navigation -->
+                <!-- Navegação por Abas de Categorias -->
                 <div class="flex flex-wrap items-center justify-center gap-3 mt-8">
                     <button onclick="filterCategory('all')" id="btn-cat-all" class="cat-btn px-6 py-2.5 rounded-full text-sm font-semibold transition bg-brand-dark text-white shadow-md">
                         Todos os Doces
@@ -227,14 +227,14 @@
                 </div>
             </div>
 
-            <!-- Products Grid -->
+            <!-- Grade de Produtos -->
             <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Products will be injected dynamically via JavaScript -->
+                <!-- Os produtos serão injetados dinamicamente via JavaScript -->
             </div>
         </div>
     </section>
 
-    <!-- CUSTOMER FAVORITES SECTION -->
+    <!-- SEÇÃO DE FAVORITOS DOS CLIENTES -->
     <section id="favoritos" class="py-20 bg-brand-cream/60 border-y border-orange-100/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -243,18 +243,18 @@
                 <p class="text-gray-600 text-base sm:text-lg">As quatro estrelas que conquistaram o coração (e o paladar) de quem nos visita.</p>
             </div>
 
-            <!-- 4 Featured Products Grid -->
+            <!-- Grade de 4 Produtos em Destaque -->
             <div id="featured-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Injected via JS -->
+                <!-- Injetado via JS -->
             </div>
         </div>
     </section>
 
-    <!-- ABOUT US SECTION -->
+    <!-- SEÇÃO SOBRE NÓS -->
     <section id="sobre" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Image Collage -->
+                <!-- Colagem de Imagens -->
                 <div class="lg:col-span-6 grid grid-cols-2 gap-4">
                     <div class="space-y-4">
                         <div class="rounded-2xl overflow-hidden shadow-lg h-52 bg-orange-100">
@@ -286,7 +286,7 @@
                     </div>
                 </div>
 
-                <!-- Text Content -->
+                <!-- Conteúdo Textual -->
                 <div class="lg:col-span-6 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-peach text-amber-900 text-xs sm:text-sm font-semibold tracking-wide border border-orange-200">
                         <span>✨ Nossa História</span>
@@ -330,7 +330,7 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS SECTION -->
+    <!-- SEÇÃO COMO FUNCIONA -->
     <section id="como-funciona" class="py-20 bg-brand-cream/50 border-y border-orange-100/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -339,9 +339,9 @@
                 <p class="text-gray-600 text-base sm:text-lg">Em apenas 3 passos fáceis, você recebe seus doces favoritos fresquinhos na sua casa.</p>
             </div>
 
-            <!-- Steps Grid -->
+            <!-- Grade de Passos -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Step 1 -->
+                <!-- Passo 1 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md border border-orange-100/80 transition text-center relative group">
                     <div class="w-16 h-16 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition duration-300 shadow-sm">
                         🍬
@@ -353,7 +353,7 @@
                     </p>
                 </div>
 
-                <!-- Step 2 -->
+                <!-- Passo 2 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md border border-orange-100/80 transition text-center relative group">
                     <div class="w-16 h-16 rounded-2xl bg-rose-100 text-brand-red flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition duration-300 shadow-sm">
                         🛒
@@ -365,7 +365,7 @@
                     </p>
                 </div>
 
-                <!-- Step 3 -->
+                <!-- Passo 3 -->
                 <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md border border-orange-100/80 transition text-center relative group">
                     <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-brand-green flex items-center justify-center text-2xl font-bold mx-auto mb-6 group-hover:scale-110 transition duration-300 shadow-sm">
                         📦
@@ -380,14 +380,14 @@
         </div>
     </section>
 
-    <!-- CART SLIDE-OVER DRAWER -->
+    <!-- PAINEL DESLIZANTE DO CARRINHO (DRAWER) -->
     <div id="cart-drawer" class="fixed inset-0 z-50 overflow-hidden hidden" aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
-        <!-- Backdrop -->
+        <!-- Fundo Escurecido -->
         <div id="cart-backdrop" onclick="toggleCart()" class="absolute inset-0 bg-brand-dark/50 backdrop-blur-sm transition-opacity opacity-0 duration-300"></div>
 
         <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
             <div id="cart-panel" class="w-screen max-w-md bg-white shadow-2xl transform transition-transform duration-300 ease-in-out translate-x-full flex flex-col">
-                <!-- Cart Header -->
+                <!-- Cabeçalho do Carrinho -->
                 <div class="p-6 bg-brand-cream border-b border-orange-100 flex items-center justify-between">
                     <div class="flex items-center gap-3">
                         <div class="w-9 h-9 rounded-full bg-brand-red text-white flex items-center justify-center shadow-sm">
@@ -403,14 +403,14 @@
                     </button>
                 </div>
 
-                <!-- Cart Body / Items List -->
+                <!-- Corpo do Carrinho / Lista de Itens -->
                 <div class="flex-1 overflow-y-auto p-6 space-y-4" id="cart-items-container">
-                    <!-- Dynamically rendered cart items or empty state -->
+                    <!-- Renderizado dinamicamente -->
                 </div>
 
-                <!-- Cart Footer & Checkout Form -->
+                <!-- Rodapé do Carrinho e Formulário de Finalização -->
                 <div class="p-6 bg-white border-t border-gray-100 space-y-4 shadow-lg">
-                    <!-- Subtotal & Total -->
+                    <!-- Subtotal e Total -->
                     <div class="space-y-1.5">
                         <div class="flex justify-between text-sm text-gray-600">
                             <span>Subtotal</span>
@@ -426,7 +426,7 @@
                         </div>
                     </div>
 
-                    <!-- Checkout Form Fields -->
+                    <!-- Campos do Formulário de Pedido -->
                     <div id="checkout-form" class="space-y-3 pt-2 border-t border-gray-100 hidden">
                         <h4 class="font-semibold text-xs uppercase tracking-wider text-gray-500">Dados para o Pedido</h4>
                         <div>
@@ -451,7 +451,7 @@
                         </div>
                     </div>
 
-                    <!-- Checkout Action Buttons -->
+                    <!-- Botões de Ação -->
                     <div class="space-y-2">
                         <button onclick="proceedToCheckout()" id="btn-proceed" class="w-full bg-brand-dark hover:bg-black text-white font-semibold py-3.5 px-4 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
                             <i class="fa-solid fa-clipboard-check"></i> Preencher Dados de Envio
@@ -466,11 +466,11 @@
         </div>
     </div>
 
-    <!-- FOOTER -->
+    <!-- RODAPÉ -->
     <footer id="contato" class="bg-brand-dark text-white pt-16 pb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-                <!-- Company Info -->
+                <!-- Informações da Empresa -->
                 <div class="lg:col-span-2 space-y-4">
                     <div class="flex items-center gap-2">
                         <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-brand-yellow via-brand-red to-brand-green flex items-center justify-center text-white shadow-md">
@@ -494,7 +494,7 @@
                     </div>
                 </div>
 
-                <!-- Quick Links -->
+                <!-- Links Rápidos -->
                 <div>
                     <h4 class="font-display font-bold text-lg mb-4 text-brand-yellow">Links Rápidos</h4>
                     <ul class="space-y-2.5 text-sm text-gray-300">
@@ -506,7 +506,7 @@
                     </ul>
                 </div>
 
-                <!-- Hours -->
+                <!-- Horários -->
                 <div>
                     <h4 class="font-display font-bold text-lg mb-4 text-brand-yellow">Atendimento</h4>
                     <ul class="space-y-2.5 text-sm text-gray-300">
@@ -521,7 +521,7 @@
                     </ul>
                 </div>
 
-                <!-- Contact & Location -->
+                <!-- Contato e Localização -->
                 <div>
                     <h4 class="font-display font-bold text-lg mb-4 text-brand-yellow">Contato</h4>
                     <ul class="space-y-2.5 text-sm text-gray-300">
@@ -541,7 +541,7 @@
                 </div>
             </div>
 
-            <!-- Bottom Copyright bar -->
+            <!-- Rodapé Inferior -->
             <div class="pt-8 border-t border-white/10 text-center text-xs text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <p>&copy; 2026 Doce Fronteira. Todos os direitos reservados. 🇧🇷 🇻🇪</p>
                 <p class="flex items-center gap-1">Feito com carinho para unir sabores e tradições.</p>
@@ -549,7 +549,7 @@
         </div>
     </footer>
 
-    <!-- Custom Notification Modal (Replacement for alert/confirm) -->
+    <!-- MODAL DE NOTIFICAÇÃO -->
     <div id="notification-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden">
         <div class="bg-white rounded-2xl max-w-sm w-full p-6 text-center shadow-2xl border border-orange-100 transform transition-all scale-95 opacity-0" id="notification-content">
             <div id="notification-icon" class="w-14 h-14 rounded-full bg-emerald-100 text-brand-green flex items-center justify-center text-2xl font-bold mx-auto mb-4">
@@ -563,18 +563,20 @@
         </div>
     </div>
 
-    <!-- JAVASCRIPT LOGIC -->
+    <!-- LÓGICA EM JAVASCRIPT -->
     <script>
-        // Data Store for Products
-        const products = [
-            // Brasil
+        /* ==========================================================================
+           ÁREAS DE AMOSTRA E DADOS DOS PRODUTOS
+           ========================================================================== */
+        let products = [
+            // Sabores do Brasil
             {
                 id: 'br-1',
                 name: 'Brigadeiro Gourmet',
                 category: 'brasil',
                 country: 'Brasil 🇧🇷',
                 price: 4.50,
-                description: 'Tradicional brigadeiro brasileiro feito com chocolate belo e granulado artesanal.',
+                description: 'Tradicional brigadeiro brasileiro feito com chocolate belga e granulado artesanal.',
                 image: 'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=600&q=80',
                 featured: true
             },
@@ -629,7 +631,7 @@
                 featured: false
             },
 
-            // Venezuela
+            // Sabores da Venezuela
             {
                 id: 've-1',
                 name: 'Golfeados Tradicionais',
@@ -692,19 +694,70 @@
             }
         ];
 
-        // Cart State
+        /* ==========================================================================
+           ESTADO GLOBAL DO CARRINHO E FILTROS
+           ========================================================================== */
         let cart = [];
         let currentCategoryFilter = 'all';
-        let isCheckoutMode = false;
 
-        // Initialize App on DOM Load
+        // Inicialização ao carregar a página
         document.addEventListener('DOMContentLoaded', () => {
             renderProducts();
             renderFeatured();
             updateCartUI();
+            injectCustomImageManager();
         });
 
-        // Mobile Menu Toggle
+        // Gerenciador de Integração de Imagens para o Produto 1
+        function injectCustomImageManager() {
+            const mainSection = document.getElementById('produtos');
+            if (!mainSection) return;
+
+            const managerDiv = document.createElement('div');
+            managerDiv.className = 'max-w-4xl mx-auto mt-12 p-6 bg-gradient-to-r from-brand-cream to-orange-50 rounded-3xl border border-orange-200 shadow-sm';
+            managerDiv.innerHTML = `
+                <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                    <div>
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-yellow/30 text-brand-dark text-xs font-bold uppercase tracking-wider mb-2">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i> Integração de Imagens & Produto 1
+                        </span>
+                        <h3 class="font-display font-bold text-xl text-brand-dark">Personalize a Imagem do Produto 1</h3>
+                        <p class="text-xs text-gray-600">Insira a URL de uma nova imagem para atualizar instantaneamente o Produto 1 na vitrine.</p>
+                    </div>
+                    <div class="flex items-center gap-2 w-full md:w-auto">
+                        <input type="text" id="custom-img-url" placeholder="Cole a URL da imagem aqui..." class="px-4 py-2.5 text-xs rounded-xl border border-gray-200 bg-white focus:outline-none focus:border-brand-red w-full md:w-64">
+                        <button onclick="updateProductOneImage()" class="bg-brand-dark hover:bg-black text-white text-xs font-semibold px-4 py-2.5 rounded-xl shadow transition whitespace-nowrap">
+                            Atualizar Produto 1
+                        </button>
+                    </div>
+                </div>
+            `;
+            const container = mainSection.querySelector('.max-w-3xl');
+            if (container) {
+                container.parentNode.insertBefore(managerDiv, container.nextSibling);
+            }
+        }
+
+        // Função para atualizar a imagem do Produto 1 dinamicamente
+        function updateProductOneImage() {
+            const input = document.getElementById('custom-img-url');
+            const url = input.value.trim();
+            if (!url) {
+                showNotification('URL Inválida', 'Por favor, insira um link de imagem válido.', 'warning');
+                return;
+            }
+
+            const prod = products.find(p => p.id === 'br-1');
+            if (prod) {
+                prod.image = url;
+                renderProducts();
+                renderFeatured();
+                input.value = '';
+                showNotification('Produto 1 Atualizado', 'A imagem do Brigadeiro Gourmet foi alterada com sucesso!', 'success');
+            }
+        }
+
+        // Controle do Menu Mobile
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
             const icon = document.getElementById('mobile-menu-icon');
@@ -716,11 +769,10 @@
             }
         }
 
-        // Filter Products by Category
+        // Filtrar Produtos por Categoria
         function filterCategory(category) {
             currentCategoryFilter = category;
             
-            // Update button styles
             document.querySelectorAll('.cat-btn').forEach(btn => {
                 btn.className = 'cat-btn px-6 py-2.5 rounded-full text-sm font-semibold transition bg-gray-100 text-gray-700 hover:bg-gray-200';
             });
@@ -732,7 +784,7 @@
             renderProducts();
         }
 
-        // Render Products Grid
+        // Renderizar Produtos na Vitrine
         function renderProducts() {
             const grid = document.getElementById('products-grid');
             const filtered = currentCategoryFilter === 'all' 
@@ -746,6 +798,7 @@
                         <span class="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-brand-dark shadow-sm">
                             ${product.country}
                         </span>
+                        ${product.id === 'br-1' ? '<span class="absolute top-3 right-3 bg-brand-red text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-sm">Produto 1 (Dinâmico)</span>' : ''}
                     </div>
                     <div class="p-6 flex-1 flex flex-col justify-between">
                         <div>
@@ -766,7 +819,7 @@
             `).join('');
         }
 
-        // Render Featured Products (4 items)
+        // Renderizar Produtos em Destaque
         function renderFeatured() {
             const grid = document.getElementById('featured-grid');
             const featuredList = products.filter(p => p.featured).slice(0, 4);
@@ -801,7 +854,7 @@
             `).join('');
         }
 
-        // Cart Drawer Toggle
+        // Alternar Gaveta do Carrinho
         function toggleCart() {
             const drawer = document.getElementById('cart-drawer');
             const panel = document.getElementById('cart-panel');
@@ -822,7 +875,7 @@
             }
         }
 
-        // Add Product to Cart
+        // Adicionar Produto ao Carrinho
         function addToCart(productId) {
             const product = products.find(p => p.id === productId);
             const existingItem = cart.find(item => item.id === productId);
@@ -837,7 +890,7 @@
             showNotification('Produto Adicionado', `${product.name} foi adicionado ao seu carrinho.`, 'success');
         }
 
-        // Update Cart Item Quantity
+        // Atualizar Quantidade no Carrinho
         function updateQuantity(productId, delta) {
             const item = cart.find(i => i.id === productId);
             if (item) {
@@ -849,13 +902,13 @@
             updateCartUI();
         }
 
-        // Remove item from Cart
+        // Remover Item do Carrinho
         function removeFromCart(productId) {
             cart = cart.filter(i => i.id !== productId);
             updateCartUI();
         }
 
-        // Update Cart UI & Calculations
+        // Atualizar Interface do Carrinho
         function updateCartUI() {
             const container = document.getElementById('cart-items-container');
             const counter = document.getElementById('cart-counter');
@@ -865,7 +918,6 @@
 
             const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
             
-            // Counter badge on top icon
             if (totalItems > 0) {
                 counter.innerText = totalItems;
                 counter.classList.remove('scale-0');
@@ -918,7 +970,7 @@
             totalEl.innerText = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
         }
 
-        // Proceed to Checkout Mode
+        // Prosseguir para Checkout
         function proceedToCheckout() {
             if (cart.length === 0) {
                 showNotification('Carrinho Vazio', 'Adicione pelo menos um doce ao carrinho antes de continuar.', 'warning');
@@ -932,13 +984,11 @@
             form.classList.remove('hidden');
             btnProceed.classList.add('hidden');
             btnWhatsapp.classList.remove('hidden');
-            isCheckoutMode = true;
 
-            // Scroll to form inside cart
             form.scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Send to WhatsApp Function
+        // Enviar Pedido via WhatsApp
         function sendToWhatsApp() {
             const name = document.getElementById('cust-name').value.trim();
             const phone = document.getElementById('cust-phone').value.trim();
@@ -951,7 +1001,6 @@
                 return;
             }
 
-            // Build WhatsApp Message
             let message = `Olá, gostaria de fazer um pedido na *Doce Fronteira* 🇧🇷 🇻🇪!\n\n`;
             message += `*Cliente:* ${name}\n`;
             message += `*Telefone:* ${phone}\n`;
@@ -972,11 +1021,10 @@
             const encodedMessage = encodeURIComponent(message);
             const whatsappUrl = `https://wa.me/5531998765432?text=${encodedMessage}`;
 
-            // Open WhatsApp
             window.open(whatsappUrl, '_blank');
         }
 
-        // Custom Notification Modal Helper
+        // Exibir Modal de Notificação
         function showNotification(title, message, type = 'success') {
             const modal = document.getElementById('notification-modal');
             const content = document.getElementById('notification-content');
