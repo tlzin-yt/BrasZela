@@ -395,93 +395,92 @@
 
     <!-- LÓGICA EM JAVASCRIPT -->
     <script>
-        // Matriz de produtos atualizada com os doces solicitados
+       // Matriz de produtos atualizada com os doces solicitados
         const products = [
             // Doces Brasileiros
-  [
-    {
-        id: 'br-1',
-        name: 'Paçoca',
-        category: 'brasil',
-        country: 'Brasil 🇧🇷',
-        price: 4.49,
-        description: 'Tradicional docinho à base de amendoim torrado e moído, com toque na medida certa de doçura.',
-        image: 'img/pacoca.jpg',
-        featured: true
-    },
-    {
-        id: 'br-2',
-        name: 'Brigadeiro',
-        category: 'brasil',
-        country: 'Brasil 🇧🇷',
-        price: 4.99, // Corrigido de 4,99 para 4.99
-        description: 'O clássico queridinho brasileiro feito com chocolate de alta qualidade e granulado artesanal.',
-        image: 'img/brigadeiro.jpg',
-        featured: true
-    },
-    {
-        id: 'br-3',
-        name: 'Pe de moleque',
-        category: 'brasil',
-        country: 'Brasil 🇧🇷',
-        price: 4.49, // Corrigido de 4,49 para 4.49
-        description: 'Crocante e saboroso doce de amendoim caramelizado com açúcar cristal.',
-        image: 'img/pedemoleque.jpg',
-        featured: false
-    },
-    {
-        id: 'br-4',
-        name: 'Doce de leite',
-        category: 'brasil',
-        country: 'Brasil 🇧🇷',
-        price: 6.99, // Corrigido de 6,99 para 6.99
-        description: 'Cremoso, dourado e preparado lentamente para garantir o verdadeiro sabor caseiro.',
-        image: 'img/docedeleite.jpg',
-        featured: true
-    },
+            {
+                id: 'br-1',
+                name: 'Paçoca',
+                category: 'brasil',
+                country: 'Brasil 🇧🇷',
+                price: 4.49,
+                description: 'Tradicional docinho à base de amendoim torrado e moído, com toque na medida certa de doçura.',
+                image: 'img/pacoca.jpg',
+                featured: true
+            },
+            {
+                id: 'br-2',
+                name: 'Brigadeiro',
+                category: 'brasil',
+                country: 'Brasil 🇧🇷',
+                price: 4.99,
+                description: 'O clássico queridinho brasileiro feito com chocolate de alta qualidade e granulado artesanal.',
+                image: 'img/brigadeiro.jpg',
+                featured: true
+            },
+            {
+                id: 'br-3',
+                name: 'Pe de moleque',
+                category: 'brasil',
+                country: 'Brasil 🇧🇷',
+                price: 4.49,
+                description: 'Crocante e saboroso doce de amendoim caramelizado com açúcar cristal.',
+                image: 'img/pedemoleque.jpg',
+                featured: false
+            },
+            {
+                id: 'br-4',
+                name: 'Doce de leite',
+                category: 'brasil',
+                country: 'Brasil 🇧🇷',
+                price: 6.99,
+                description: 'Cremoso, dourado e preparado lentamente para garantir o verdadeiro sabor caseiro.',
+                image: 'img/docedeleite.jpg',
+                featured: true
+            },
 
-    // Doces Venezuelanos
-    {
-        id: 've-1',
-        name: 'Chicha',
-        category: 'venezuela',
-        country: 'Venezuela 🇻🇪',
-        price: 9.99, // Corrigido de 9,99 para 9.99
-        description: 'Bebida cremosa tradicional venezuelana levemente adocicada com leite condensado e canela.',
-        image: 'img/chicha.jpg',
-        featured: true
-    },
-    {
-        id: 've-2',
-        name: 'Tizana',
-        category: 'venezuela',
-        country: 'Venezuela 🇻🇪',
-        price: 10.99,
-        description: 'Refrescante salada de frutas venezuelana com suco natural e toque especial da casa.',
-        image: 'img/tizana.jpg',
-        featured: false
-    },
-    {
-        id: 've-3',
-        name: 'Doce de coco',
-        category: 'venezuela',
-        country: 'Venezuela 🇻🇪',
-        price: 5.99, // Corrigido de 5,99 para 5.99
-        description: 'Deliciosa sobremesa à base de coco fresco ralado com especiarias e papelón.',
-        image: 'img/docedecoco.jpg',
-        featured: false
-    },
-    {
-        id: 've-4',
-        name: 'Golfeado',
-        category: 'venezuela',
-        country: 'Venezuela 🇻🇪',
-        price: 11.99, // Corrigido de 11,99 para 11.99
-        description: 'Rolinho doce fofinho recheado com papelón (rapadura) e queijo fresco artesanal.',
-        image: 'img/golfeado.jpg',
-        featured: true
-    }
-]
+            // Doces Venezuelanos
+            {
+                id: 've-1',
+                name: 'Chicha',
+                category: 'venezuela',
+                country: 'Venezuela 🇻🇪',
+                price: 9.99,
+                description: 'Bebida cremosa tradicional venezuelana levemente adocicada com leite condensado e canela.',
+                image: 'img/chicha.jpg',
+                featured: true
+            },
+            {
+                id: 've-2',
+                name: 'Tizana',
+                category: 'venezuela',
+                country: 'Venezuela 🇻🇪',
+                price: 10.99,
+                description: 'Refrescante salada de frutas venezuelana com suco natural e toque especial da casa.',
+                image: 'img/tizana.jpg',
+                featured: false
+            },
+            {
+                id: 've-3',
+                name: 'Doce de coco',
+                category: 'venezuela',
+                country: 'Venezuela 🇻🇪',
+                price: 5.99,
+                description: 'Deliciosa sobremesa à base de coco fresco ralado com especiarias e papelón.',
+                image: 'img/docedecoco.jpg',
+                featured: false
+            },
+            {
+                id: 've-4',
+                name: 'Golfeado',
+                category: 'venezuela',
+                country: 'Venezuela 🇻🇪',
+                price: 11.99,
+                description: 'Rolinho doce fofinho recheado com papelón (rapadura) e queijo fresco artesanal.',
+                image: 'img/golfeado.jpg',
+                featured: true
+            }
+        ];
 
         let cart = [];
         let currentCategoryFilter = 'all';
